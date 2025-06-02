@@ -1,4 +1,12 @@
 import { Route, ViewType } from '@/types';
+import * as comment2434 from '@/routes/comment2434';
+// 他のルート定義も import 済みと仮定
+
+export const routeMap: Record<string, Route> = {
+    // 既存のルート
+    '/routes/:lang?': route, // ← このファイル自体の route
+    '/comment2434/:keyword': comment2434.route, // ✅ 追加するこれ！
+};
 import ofetch from '@/utils/ofetch';
 import * as cheerio from 'cheerio';
 
@@ -103,5 +111,3 @@ async function handler(ctx) {
         }),
     };
 }
-
-export * as comment2434 from '@/routes/comment2434';
