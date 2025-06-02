@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
 export const route: Route = {
-    path: '/:keyword',
+    path: '/comment2434/:keyword',
     name: 'Comment2434',
     url: 'comment2434.com',
     maintainers: ['yourGitHubUsername'],
