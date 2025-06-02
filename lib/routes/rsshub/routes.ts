@@ -103,3 +103,5 @@ async function handler(ctx) {
         }),
     };
 }
+
+export * as comment2434 from '@/routes/comment2434';
